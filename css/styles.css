@@ -9,10 +9,15 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: lightgray;
-    margin: 0;
+    justify-content: center;
+    margin: 0 auto 0 auto;
     padding: 0;
-    font-family: monospace;
+    font-family: Arial;
+    min-height: 100vh;
+    max-width: 1400px;
 }
 
 .contact-info {
@@ -39,7 +44,30 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    font-size: 1.5em;
+    height: 60px;
+    font-size: 18px;
+    margin-top: auto;
+}
+
+footer > a {
+    color: black;
+    text-decoration: underline solid rgba(168, 139, 109, 0);
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 3px;
+}
+
+footer > a.active {
+    text-decoration: underline solid #a88b6d;
+    text-underline-offset: 0.3em;
+    text-decoration-thickness: 3px;
+}
+
+footer > a:hover {
+    color: black;
+    text-decoration: underline solid rgba(168, 139, 109, 1);
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 3px;
+    transition: text-decoration-color 400ms;
 }
 
 main {
@@ -137,6 +165,24 @@ nav > .nav-inner > a.inactive:hover {
     margin-right: 20px;
 }
 
+#news-feed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+}
+
+.news-post {
+    max-width: 600px;
+    width: 100%;
+    background-color: white;
+    padding: 5px;
+}
+
 #service-boxes {
     display: flex;
     flex-direction: row;
@@ -148,8 +194,8 @@ nav > .nav-inner > a.inactive:hover {
 .service-box {
     display: flex;
     flex-direction: column;
-    width: 400px;
-    height: 600px;
+    width: 30%;
+    height: auto;
     background-color: #4e75b6;
     box-shadow: 5px 5px 8px black;
     border: solid white 2px;
@@ -163,8 +209,8 @@ nav > .nav-inner > a.inactive:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 250px;
-    padding: 10px 30px 0px 30px;
+    height: auto;
+    padding: 10px 30px 20px 30px;
 }
 
 .service-box > div > h2 {
@@ -187,4 +233,28 @@ nav > .nav-inner > a.inactive:hover {
     transition: text-decoration-color 400ms;
     text-underline-offset: 0.2em;
     text-decoration-thickness: 3px;
+}
+
+#service-map {
+    padding: 50px 0 50px 0;
+    max-width: 1400px;
+}
+
+#service-map-text {
+    font-size: 150%;
+}
+
+#site-map-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+}
+
+#site-map-table tr > th {
+    padding: 5px 0 5px 0;
+    text-align: left;
+}
+
+#site-map-table tr > td {
+    padding: 5px 30px 5px 0;
 }
