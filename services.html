@@ -1,49 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>WoodnSticks - Services</title>
-    <link rel="stylesheet" href="css/styles.css">
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<meta content="FFF" name="theme-color">
+	<link href="icons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+	<link href="icons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+	<link href="icons/site.webmanifest" rel="manifest">
+	<title>WoodnSticks - Services</title>
+	<link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
 <header>
-    <div id="header-logo">
-        <img id="logo-image" src="photos/woodnsticks-logo.png" alt="WoodnSticks logo in white">
-        <h1>
-            <span id="header-word1">Woodn</span>
-            <span id="header-word2">Sticks</span>
-        </h1>
-    </div>
-    <div id="header-contact">
-        <div class="contact-info">
-            <img src="icons/phone_line.png" alt="phone icon">
-            <p>604-555-1025</p>
-        </div>
-        <div class="contact-info">
-            <img src="icons/mail_send_line.png" alt="email icon">
-            <p>woodnsticks@gmail.com</p>
-        </div>
-    </div>
+	<div id="header-logo">
+		<img alt="WoodnSticks logo in white" id="logo-image" src="photos/woodnsticks-logo.png">
+		<h1>
+			<span id="header-word1">Woodn</span>
+			<span id="header-word2">Sticks</span>
+		</h1>
+	</div>
+	<div id="header-contact">
+		<div class="contact-info">
+			<img alt="phone icon" src="icons/phone_line.png">
+			<p>604-555-1025</p>
+		</div>
+		<div class="contact-info">
+			<img alt="email icon" src="icons/mail_send_line.png">
+			<a href="mailto:enewton9@my.bcit.ca">enewton9@my.bcit.ca</a>
+		</div>
+	</div>
 </header>
 <nav>
-    <div class="nav-inner">
-        <a class="inactive" href="index.html">Home</a>
-        <a class="inactive" href="about.html">About Us</a>
-        <a class="active">Services</a>
-        <a class="inactive" href="portfolio.html">Portfolio</a>
-        <a class="inactive" href="news.html">News</a>
-        <a class="inactive" href="service-area.html">Service Area</a>
-        <a class="inactive" href="contact.html">Contact Us</a>
-    </div>
+	<div class="nav-inner">
+		<a class="inactive" href="index.html">Home</a>
+		<a class="active">Services</a>
+		<a class="inactive" href="portfolio.html">Portfolio</a>
+		<a class="inactive" href="news.html">News</a>
+		<a class="inactive" href="service-area.html">Service Area</a>
+		<a class="inactive" href="contact.html">Contact Us</a>
+	</div>
 </nav>
-<main>
+<main class="services-container">
+	<section class="services-box">
+		<div class="services-text-headline">
+			<h2>Our Services</h2>
+			<p>Our skilled team is always ready to tackle any job you may have. From small repairs to basement renos, our team has a wide range of
+				skills and knowledge to handle anything you can throw our way!</p>
+			<table>
+				<tr>
+					<th>These are just some of the services our team can provide:</th>
+				</tr>
+				<tr>
+					<td>Door installs</td>
+					<td>Base trim repair and install</td>
+				</tr>
+				<tr>
+					<td>Drywall repair</td>
+					<td>Trash/yard cleanup and dump runs</td>
+				</tr>
+				<tr>
+					<td>TV mounting</td>
+					<td>Flooring repair</td>
+				</tr>
+				<tr>
+					<td>Small cement and concrete repair</td>
+					<td>Honey to do lists</td>
+				</tr>
+			</table>
+		</div>
+	</section>
+	<section class="services-box">
+		<a id="services-pressure-washing"></a>
+		<img alt="cartoon of a man pressure washing" class="services-cartoons" src="photos/pressurewashing.jpg">
+		<div class="services-text">
+			<h2>Pressure Washing</h2>
+			<p>We use state-of-the-art equipment to revive any dull surfaces around your home. Whether it's your homes exterior, driveway, sidewalk
+				or patio, our cleaning techniques can remove all dirt and grime to make them look brand new. Our skilled professionals can even tackle
+				commercial buildings with ease!</p>
+		</div>
+	</section>
+	<section class="services-box">
+		<img alt="cartoon of a man landscaping" class="services-cartoons" src="photos/landscaping.jpg">
+		<div class="services-text">
+			<h2><a id="services-landscaping">Landscaping</a></h2>
+			<p>Here at WoodnSticks we love transforming outdoor spaces into landscapes that make homeowners fall in love with their property
+				again. Our teams meticulous attention to detail can transform your outdoor space into a brand-new oasis.</p>
+		</div>
+	</section>
+	<section class="services-box">
+		<img alt="cartoon of a handyman" class="services-cartoons" src="photos/handyman.jpg">
+		<div class="services-text">
+			<h2><a id="services-wall-repairs">Wall Repairs</a></h2>
+			<p>Nobody likes holes in their walls, even small screw or nail holes. The team at WoodnSticks is capable of patching them up and
+				reviving them with a coat of paint so you'll be able to sleep at night knowing you have the best walls in the neighbourhood!</p>
+		</div>
+	</section>
 </main>
 <footer>
-    <a href="sitemap.html">Site Map</a>
-    <a href="https://github.com/ethannewton500/COMP1850-Final-Project">GitHub</a>
-    <a href="https://www.bcitwebdev.com/">COMP 1850</a>
+	<div class="footer-inner">
+		<a href="sitemap.html">Site Map</a>
+		<a href="https://github.com/ethannewton500/COMP1850-Final-Project">GitHub</a>
+		<a href="https://www.bcitwebdev.com/">COMP 1850</a>
+	</div>
 </footer>
 </body>
 </html>
